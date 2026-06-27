@@ -20,8 +20,10 @@ DISK=$(df -h / | awk 'NR==2 {print $4}')
 #extracting 2nd row value of 4th column
 echo "Free disk : $DISK"
 DISKO=$(df / | awk 'NR==2 {print $4}')
-if [ $DISKO -lt 5120000 ]; then
+if [ "$DISKO" -lt 5120000 ]; then
     echo '[LOW DISK]'
 fi
 
 echo "====SETUP CHECK COMPLETE===="
+
+echo "===IMPROVEMENT DONE HERE==="
