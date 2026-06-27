@@ -1,0 +1,9 @@
+# .gitignore for this assignment
+
+*.pyc
+__pycache__/
+*.log
+*.bag
+*.db3
+build/
+install/
